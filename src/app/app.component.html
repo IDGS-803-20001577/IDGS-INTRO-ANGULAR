@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div>
+      <p>
+        Hola
+        // interpolacion de llaves dinamicos
+        {{grupo}}
+      </p>
+    </div>
+    
+    <div>
+      el doble de 3 es {{duplicarN(3)}}
+    </div>
+    
+    <hr>
+    <div>
+      <b>Nombre:</b>{{alumnos.nombre | uppercase}}
+    </div>
+    <br>
+    <div>
+      <b>Matricula:</b>{{alumnos.matricula}}
+    </div>
+    <br>
+    <div>
+      <b>Fecha de Nacimiento:</b> {{alumnos.fechaNacimiento | date:"dd-MM-yy"}}
+    </div>
+    <br>
+    <div>
+      <b>Pago:</b>{{alumnos.pago| currency}}
+    </div>    
+  </div>
+</div>
+<hr>
+<app-grupo></app-grupo>
+<hr>
+<app-ievn></app-ievn>
+
