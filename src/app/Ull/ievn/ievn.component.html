@@ -35,10 +35,11 @@
             <th>Correo</th>
             <th>Pago</th>
             <th>Foto</th>
+            <th>Calificacion</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let alumno of alumnos">
+          <tr *ngFor="let alumno of alumnos | alumnosFilter:listFilter">
             <td></td>
             <td>{{alumno.matricula}}</td>
             <td>{{alumno.nombre | uppercase}}</td>
@@ -52,6 +53,7 @@
                 [style.width.px]="imageWithd"
                 [style.margin.px]="imageMargin">
             </td>
+            <td>{{alumno.calif}}</td>
           </tr>
         </tbody>
       </table>

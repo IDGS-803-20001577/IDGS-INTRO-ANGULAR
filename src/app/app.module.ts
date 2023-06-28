@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { SumaComponent } from './Ull/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasBasModule } from './Ull/formularios/operas-bas/operas-bas.module';
+import { MenuComponent } from './Ull/menu/menu.component';
+import { AlumnosFilterPipe } from './Ull/alumnos-filter.pipe';
 
 
 
@@ -17,7 +19,9 @@ import { OperasBasModule } from './Ull/formularios/operas-bas/operas-bas.module'
     AppComponent,
     idgsComponet,
     IevnComponent,
-    SumaComponent
+    SumaComponent,
+    MenuComponent,
+    AlumnosFilterPipe
   ],
   imports: [
     BrowserModule,
